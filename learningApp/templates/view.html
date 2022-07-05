@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>Fomulário</title>
+		<!-- Bootstrap CSS only -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<div class="col-8 m-auto pt-2 pb-2 text-center">
+			<h1>Visualização</h1>
+		</div>
+
+		<div class="col-8 m-auto pt-4 pb-2 text-center">
+			<strong>Modelo: {{db_id.modelo}}</strong> <br />
+			<strong>Marca: {{db_id.marca}}</strong> <br />
+			<strong>Ano: {{db_id.ano}}</strong> <br />
+		</div>
+
+		<div class="col-8 m-auto pt-4 pb-2 text-center">
+			<a href="/" class="btn btn-secondary">Voltar</a>
+		</div>
+	</body>
+</html>

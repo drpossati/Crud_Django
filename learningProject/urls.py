@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from learningApp.views import helloWorld
-from learningApp.views import home, form
+from learningApp.views import home, form, create, view
 
 urlpatterns = [
-    path('', home),
-    path('form/', form),
+    path('', home, name='inicio'),
+    path('form/', form, name='form'),
+    path('cadastrar/', create, name='cadastrar'),
+    path('visualizar/<int:pk>/', view, name='visualizar'),
     path('admin/', admin.site.urls),
     path('helloworld/', helloWorld),
 ]
