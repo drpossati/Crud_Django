@@ -22,6 +22,22 @@
 			<a href="/" class="btn btn-info">Voltar</a>
 		</div>
 
-		<div class="col-8 m-auto pt-5 pb-2 text-center"></div>
+		<div class="col-8 m-auto pt-4 pb-2 text-center">
+			<!-- Exibindo formulário em parágrafos-->
+
+			<!-- {{form_id.as_p}} -->
+
+			<form action="" name="form" id="form" method="POST">
+				<!-- Proteção para o formulário -->
+				{% csrf_token %}
+				<!-- Exibindo formulário campo por campo-->
+				<div class="form-group mt-4">Modelo: {{form_id.modelo}}</div>
+				<div class="form-group mt-4">Marca: {{form_id.marca}}</div>
+				<div class="form-group mt-4">Ano: {{form_id.ano}}</div>
+				<div class="form-group mt-4">
+					<input type="submit" class="btn btn-success" value="Salvar" />
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
