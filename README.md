@@ -1,5 +1,5 @@
 ---
-title: "Config to Markdown Preview Enhanced in Vscodium"
+title: "Crud com Python e Django"
 author: I'm
 date: July 13, 2022
 number_sections: true
